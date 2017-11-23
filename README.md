@@ -26,10 +26,10 @@ Execute following commands to run this application.
 
 
 ```
-$ git clone https://github.com/srinivastamada/ionic-welcome.git
-$ cd ionic-welcome
-$ npm install
-$ ionic serve
+$ git clone https://github.com/alexdj3008/CommunitySolution.git
+$ cd CommunitySolution
+$ npm i
+$ ionic serve -l
 
 ```
 
