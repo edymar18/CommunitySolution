@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+
 import { Http } from '@angular/http';
 import { NavController, App } from 'ionic-angular';
 // Import pages to allow links to the page
@@ -20,7 +20,7 @@ export class HomePage {
 
   constructor(
               public navCtrl: NavController,
-              public params:NavParams,
+              
               private itemApi: ItemApi,
               public app: App
             )
