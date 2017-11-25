@@ -1,3 +1,4 @@
+/* Typograhpy */
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -33356,6 +33357,78 @@ ion-navbar.toolbar {
   height: 40px;
   float: left;
   margin-left: 10px;
+}
+
+page-home .image__padding {
+  padding: 50px;
+}
+
+page-home .padding_helper {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+page-home .category__image {
+  background-image: url("../assets/imgs/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+page-home .category__image2 {
+  background-image: url("../assets/imgs/2.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+page-home .category__image3 {
+  background-image: url("../assets/imgs/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+page-home .section__headline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: .8px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #e3e3e3;
+}
+
+page-home .category__headline {
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.1;
+  margin: 5px;
+}
+
+page-single-item .scroll-content {
+  background-color: #fff;
+}
+
+page-single-item .background_image_header {
+  background-image: url("../assets/img/backgrounds/img1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+page-single-item .headline {
+  color: #fff;
+}
+
+page-single-item .item__content {
+  margin: 0;
+}
+
+page-single-item p {
+  margin: 0;
 }
 
 page-welcome #welcome {
