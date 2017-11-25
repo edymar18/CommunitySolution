@@ -146,7 +146,7 @@ var Welcome = (function () {
     };
     Welcome = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/welcome/welcome.html"*/`\n\n\n<ion-content padding id="welcome">\n\n<img src="assets/imgs/logo.png" class="logo"/>\n<h1> Community Solution </h1>\n<div>Soluciones para tu comunidad</div>\n\n<button ion-button block class="marginTop" (click)="signup()">Registrarse</button>\n<button ion-button block color="lightprimary" (click)="login()">Ingresar</button>\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/welcome/welcome.html"*/,
+            selector: 'page-welcome',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/welcome/welcome.html"*/`\n\n\n<ion-content padding id="welcome">\n\n<img src="assets/imgs/logo.png" class="logo"/>\n<h1> Community Solution </h1>\n<div>Soluciones para tu comunidad</div>\n\n<button ion-button block class="marginTop" (click)="signup()">Registrarse</button>\n<button ion-button block color="corporate" (click)="login()">Ingresar</button>\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/welcome/welcome.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], Welcome);
