@@ -146,7 +146,7 @@ var Welcome = (function () {
     };
     Welcome = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/welcome/welcome.html"*/`\n\n\n<ion-content padding id="welcome">\n\n<img src="assets/imgs/logo.png" class="logo"/>\n<h1> Community Solution </h1>\n<div>Soluciones para tu comunidad</div>\n\n<button ion-button block class="marginTop" (click)="signup()">Registrarse</button>\n<button ion-button block color="corporate" (click)="login()">Ingresar</button>\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/welcome/welcome.html"*/,
+            selector: 'page-welcome',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/welcome/welcome.html"*/`<ion-content padding id="welcome">\n\n\n  <ion-slides pager autoplay="5000" loop="true" speed="3000">\n\n  <ion-slide style="background-color: white">\n    <img src="assets/imgs/logo.png" class="logo"/>\n	<h1> Community Solution </h1>\n	 <div>Soluciones para tu comunidad</div>\n    <button ion-button block class="marginTop" (click)="signup()">Registrarse</button>\n	<button ion-button block color="corporate" (click)="login()">Ingresar</button>\n  </ion-slide>\n\n  <ion-slide style="background-color: white">\n    <h2>Pública tu idea para ayudar a la comunidad</h2>\n    <img src="../../assets/imgs/3.jpg">\n  </ion-slide>\n\n  <ion-slide style="background-color: white">\n  	<img src="../../assets/imgs/1.jpg">\n    <div>Soluciones para tu comunidad</div>\n    <button ion-button block class="marginTop" (click)="signup()">Registrarse</button>\n	<button ion-button block color="corporate" (click)="login()">Ingresar</button>\n  </ion-slide>\n\n</ion-slides>\n\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/welcome/welcome.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], Welcome);
@@ -226,16 +226,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var AboutPage = (function () {
-    function AboutPage(navCtrl) {
+    function AboutPage(navCtrl, app) {
         this.navCtrl = navCtrl;
+        this.app = app;
     }
+    AboutPage.prototype.logout = function () {
+        //Api Token Logout 
+        var root = this.app.getRootNav();
+        root.popToRoot();
+    };
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/about/about.html"*/`<ion-header>\n  <ion-navbar>\n    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />\n    <ion-title>About</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/about/about.html"*/`<ion-header>\n	\n  <ion-navbar>\n  	<button menuToggle start>\n          <ion-icon name="md-menu"></ion-icon>\n    </button>\n    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />\n    <ion-title>About</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Bienvenido a Community Solution</h2>\n  <button ion-button color="primary" (click)="logout()">Logout</button>\n</ion-content>`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/about/about.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]) === "function" && _b || Object])
     ], AboutPage);
     return AboutPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=about.js.map
@@ -307,7 +314,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/home/home.html"*/`<ion-header>\n  <ion-navbar>\n    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Bienvenido a Community Solution</h2>\n  <button ion-button color="primary" (click)="logout()">Logout</button>\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/home/home.html"*/`<ion-header>\n	\n  <ion-navbar>\n  	<button menuToggle start>\n          <ion-icon name="md-menu"></ion-icon>\n    </button>\n    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Bienvenido a Community Solution</h2>\n  <button ion-button color="primary" (click)="logout()">Logout</button>\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]])
     ], HomePage);
@@ -454,11 +461,12 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/app/app.html"*/`<ion-nav [root]="rootPage"></ion-nav>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/app/app.html"*/`<ion-menu [content]="content">\n<ion-header>\n  <ion-toolbar>\n    <ion-title>Menu Lateral</ion-title>\n  </ion-toolbar>\n</ion-header>\n  <ion-content>\n    <ion-list>\n      <button ion-item (click)="logout()">\n        Home\n      </button>\n      <button ion-item (click)="openPage(friendsPage)">\n        <ion-icon name="home"></ion-icon>Friends\n      </button>\n      <button ion-item (click)="openPage(eventsPage)">\n        Events\n      </button>\n      <button ion-item (click)="logout()">\n        Logout\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n\n<ion-nav [root]="rootPage"  #content swipeBackEnabled="false"></ion-nav>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object])
     ], MyApp);
     return MyApp;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=app.component.js.map

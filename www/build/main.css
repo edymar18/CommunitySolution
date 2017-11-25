@@ -33360,11 +33360,12 @@ ion-navbar.toolbar {
 
 page-welcome #welcome {
   background: #FFFFFF;
+  margin: 0 0 0 0;
 }
 
 page-welcome #welcome h1 {
   font-size: 52px;
-  margin-top: 50px;
+  margin-top: 0px;
   display: block;
   margin: 0 auto 0 auto;
   text-align: center;
@@ -33375,7 +33376,7 @@ page-welcome #welcome div {
 }
 
 page-welcome #welcome .marginTop {
-  margin-top: 120px;
+  margin-top: 20px;
 }
 
 page-welcome #welcome .logo {

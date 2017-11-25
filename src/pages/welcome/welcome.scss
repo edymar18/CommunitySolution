@@ -1,9 +1,10 @@
 page-welcome {
 #welcome{
     background: color($colors, clear);
+    margin: 0 0 0 0;
     h1{
         font-size: 52px;
-        margin-top:50px;
+        margin-top:0px;
         display:block;
         margin: 0 auto 0 auto;
         text-align: center;
@@ -12,12 +13,13 @@ page-welcome {
         text-align: center;
     }
     .marginTop{
-        margin-top:120px;
+        margin-top:20px;
     }
     .logo{
         height: 130px;
         display:block;
         margin: 0 auto 0 auto;
     }
+
 }
 }
