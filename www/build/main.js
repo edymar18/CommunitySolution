@@ -330,29 +330,38 @@ var HomePage = (function () {
     // The SingleItem Page has been included to be passed in this function.
     HomePage.prototype.CategoryTapped = function ($event, category) {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages_category_category__["a" /* CategoryPage */], {
-            category: 'Fantasticness'
+            category: 'Infraestructura'
         });
     };
     HomePage.prototype.CategoryTapped_2 = function ($event, category) {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages_category_category__["a" /* CategoryPage */], {
-            category: 'Short'
+            category: 'Salud'
         });
     };
     HomePage.prototype.CategoryTapped_3 = function ($event, category) {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages_category_category__["a" /* CategoryPage */], {
-            category: 'Booperness'
+            category: 'Seguridad'
+        });
+    };
+    HomePage.prototype.CategoryTapped_4 = function ($event, category) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages_category_category__["a" /* CategoryPage */], {
+            category: 'CulturayDeporte'
+        });
+    };
+    HomePage.prototype.CategoryTapped_5 = function ($event, category) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__pages_category_category__["a" /* CategoryPage */], {
+            category: 'Otros'
         });
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/home/home.html"*/`<ion-header>\n	\n  <ion-navbar>\n  	<button menuToggle start>\n          <ion-icon name="md-menu"></ion-icon>\n    </button>\n    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <!-- Beginning of the category card -->\n  <div class="padding_helper" color="white" (click)="CategoryTapped()">\n    <div class="category__image">\n        <div class="text-center image__padding">\n          <p class="section__headline">\n              The Stuff\n          </p>\n          <p class="nomargin category__headline">\n              Pineapple\n          </p>\n        </div>\n    </div>\n  </div>\n  <!-- End of the category card -->\n\n  <!-- Beginning of the category card -->\n  <div class="padding_helper" color="white" (click)="CategoryTapped_2()">\n    <div class="category__image2">\n        <div class="text-center image__padding">\n          <p class="section__headline">\n              The breakfast\n          </p>\n          <p class="nomargin category__headline">\n              Eggs on a pan\n          </p>\n        </div>\n    </div>\n  </div>\n  <!-- End of the category card -->\n\n  <!-- Beginning of the category card -->\n  <div class="padding_helper" color="white" (click)="CategoryTapped_3()">\n    <div class="category__image3">\n        <div class="text-center image__padding">\n          <p class="section__headline">\n              The snacks\n          </p>\n          <p class="nomargin category__headline">\n              Burger\n          </p>\n        </div>\n    </div>\n  </div>\n  <!-- End of the category card -->\n\n  <button ion-button color="primary" (click)="logout()">Logout</button>\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/home/home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/home/home.html"*/`<ion-header>\n	\n  <ion-navbar>\n  	<button menuToggle start>\n          <ion-icon name="md-menu"></ion-icon>\n    </button>\n    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />\n    <ion-title>Categorías</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <!-- Beginning of the category card -->\n  <div class="padding_helper" color="white" (click)="CategoryTapped()">\n    <div class="category__image">\n        <div class="text-center image__padding">\n          <p class="section__headline">\n              Inversión en obras civiles\n          </p>\n          <p class="nomargin category__headline">\n              Infraestructura\n          </p>\n        </div>\n    </div>\n  </div>\n  <!-- End of the category card -->\n\n  <!-- Beginning of the category card -->\n  <div class="padding_helper" color="white" (click)="CategoryTapped_2()">\n    <div class="category__image2">\n        <div class="text-center image__padding">\n          <p class="section__headline">\n              Mejora de calidad de vida\n          </p>\n          <p class="nomargin category__headline">\n              Salud\n          </p>\n        </div>\n    </div>\n  </div>\n  <!-- End of the category card -->\n\n  <!-- Beginning of the category card -->\n  <div class="padding_helper" color="white" (click)="CategoryTapped_3()">\n    <div class="category__image3">\n        <div class="text-center image__padding">\n          <p class="section__headline">\n              Siempre preparados\n          </p>\n          <p class="nomargin category__headline">\n              Seguridad\n          </p>\n        </div>\n    </div>\n  </div>\n  <!-- End of the category card -->\n\n   <!-- Beginning of the category card -->\n  <div class="padding_helper" color="white" (click)="CategoryTapped_4()">\n    <div class="category__image4">\n        <div class="text-center image__padding">\n          <p class="section__headline">\n              Participa y aprende\n          </p>\n          <p class="nomargin category__headline">\n              Cultura y deporte\n          </p>\n        </div>\n    </div>\n  </div>\n  <!-- End of the category card -->\n\n  <!-- Beginning of the category card -->\n  <div class="padding_helper" color="white" (click)="CategoryTapped_5()">\n    <div class="category__image5">\n        <div class="text-center image__padding">\n          <p class="section__headline">\n              Plantea tus ideas\n          </p>\n          <p class="nomargin category__headline">\n              Otros Proyectos\n          </p>\n        </div>\n    </div>\n  </div>\n  <!-- End of the category card -->\n\n  <button ion-button color="primary" (click)="logout()">Logout</button>\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/home/home.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_4__services_service__["a" /* ItemApi */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* App */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__services_service__["a" /* ItemApi */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_service__["a" /* ItemApi */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* App */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* App */]) === "function" && _c || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -421,7 +430,7 @@ var CategoryPage = (function () {
     };
     CategoryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-category',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/category/category.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>\n      <img class="title-image" alt="logo" height="40"   src="assets/img/logo.png" >\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- List Code -->\n  <ion-list>\n\n    <ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n        <ion-avatar item-left>\n          <img src="{{ item.imgpath }}">\n        </ion-avatar>\n        <h2>{{ item.title }}</h2>\n        <p>{{ item.category }}</p>\n    </ion-item>\n\n  </ion-list>\n  <!-- End of List Code -->\n\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/category/category.html"*/,
+            selector: 'page-category',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/category/category.html"*/`<ion-header>\n  <ion-navbar>\n    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />\n    <ion-title>Elementos de Categoría</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- List Code -->\n  <ion-list>\n\n    <ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n        <ion-avatar item-left>\n          <img src="{{ item.imgpath }}">\n        </ion-avatar>\n        <h2>{{ item.title }}</h2>\n        <p>{{ item.category }}</p>\n    </ion-item>\n\n  </ion-list>\n  <!-- End of List Code -->\n\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/category/category.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
@@ -766,7 +775,7 @@ var ListPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_list__ = __webpack_require__(282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(160);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -785,11 +794,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TabsPage = (function () {
     function TabsPage() {
         this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__list_list__["a" /* ListPage */];
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/tabs/tabs.html"*/`<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Perfil" tabIcon="contact"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/tabs/tabs.html"*/`<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="List" tabIcon="list-box"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Perfil" tabIcon="contact"></ion-tab>\n</ion-tabs>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -833,7 +842,7 @@ var SingleItem = (function () {
     }
     SingleItem = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-single-item',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/single-item/single-item.html"*/`<ion-header>\n  <ion-navbar>\n    <ion-title>\n      <img class="title-image" alt="logo" height="40" src="assets/img/logo.png" >\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n    <!-- Header content with background -->\n    <div class="background_image_header text-center">\n\n      <br>\n\n      <!-- Item title -->\n      <h3 class="headline">\n        {{ item.title }}\n      </h3>\n      <!-- End of Item title -->\n\n      <br>\n\n      <!-- Item Category -->\n      <a class="btn__line__square__white">\n        {{ item.category }}\n      </a>\n      <!-- End of Item Category -->\n\n      <br>\n      <br>\n      <br>\n\n    </div>\n    <!-- End of Header Content -->\n\n    <!-- Content Description -->\n    <div class="item__content">\n      <p padding>\n        {{ item.description }}\n      </p>\n    </div>\n    <!-- End of Content Description -->\n\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/single-item/single-item.html"*/,
+            selector: 'page-single-item',template:/*ion-inline-start:"/home/alexis/Documentos/CommunitySolution/src/pages/single-item/single-item.html"*/`<ion-header>\n  <ion-navbar>\n    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />\n    <ion-title>Proyecto</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <!-- Header content with background -->\n    <div class="background_image_header text-center">\n\n      <br>\n       <br> \n        <br>\n      <!-- Item title -->\n      <h3 class="headline">\n        {{ item.title }}\n      </h3>\n      <!-- End of Item title -->\n      \n      <br>\n\n      <!-- Item Category -->\n      <a class="btn__line__square__white">\n        {{ item.category }}\n      </a>\n      <!-- End of Item Category -->\n\n      <br>\n      <br>\n      <br>\n\n    </div>\n    <!-- End of Header Content -->\n\n    <!-- Content Description -->\n    <div class="item__content">\n      <p padding>\n        {{ item.description }}\n      </p>\n    </div>\n    <!-- End of Content Description -->\n\n</ion-content>\n`/*ion-inline-end:"/home/alexis/Documentos/CommunitySolution/src/pages/single-item/single-item.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],

@@ -42,19 +42,31 @@ export class HomePage {
   // The SingleItem Page has been included to be passed in this function.
   CategoryTapped($event, category) {
     this.navCtrl.push(CategoryPage, {
-        category: 'Fantasticness'
+        category: 'Infraestructura'
     });
   }
 
   CategoryTapped_2($event, category) {
     this.navCtrl.push(CategoryPage, {
-        category: 'Short'
+        category: 'Salud'
     });
   }
 
   CategoryTapped_3($event, category) {
     this.navCtrl.push(CategoryPage, {
-        category: 'Booperness'
+        category: 'Seguridad'
+    });
+  }
+
+  CategoryTapped_4($event, category) {
+    this.navCtrl.push(CategoryPage, {
+        category: 'CulturayDeporte'
+    });
+  }
+
+  CategoryTapped_5($event, category) {
+    this.navCtrl.push(CategoryPage, {
+        category: 'Otros'
     });
   }
 
